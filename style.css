@@ -1,0 +1,161 @@
+* {
+	font-family: 'Chivo Mono';
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-size: 18px;
+}
+
+body {
+	background-image: url('images/background-img.png');
+	background-repeat: repeat;
+	background-size: cover;
+	--color-primary: #f2a2b1;
+	--color-primary-dark: #b84a72;
+	--color-secondary: #a1626f;
+	--color-error: #ec2020;
+	--color-success: #24a72a;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container {
+	width: 400px;
+	max-width: 400px;
+	margin: 1rem;
+	padding: 2rem;
+	background-color: #ffffffb0;
+	border-radius: 10px;
+	box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+}
+
+.form-title {
+	font-size: 2rem;
+	font-weight: 600;
+	margin-bottom: 1rem;
+	text-align: center;
+}
+
+.hidden {
+	display: none;
+}
+
+.form > *:first-child {
+	margin-top: 0;
+}
+.form > *:last-child {
+	margin-bottom: 0;
+}
+
+.form-text {
+	padding-top: 0.75rem;
+}
+
+.form-message {
+	text-align: center;
+	margin-bottom: 1rem;
+}
+
+.form-message-error {
+	color: var(--color-error);
+}
+
+.form-message-success {
+	color: var(--color-success);
+}
+
+.input-group {
+	margin-bottom: 1rem;
+}
+
+.form-input {
+	display: block;
+	width: 100%;
+	padding: 0.75rem;
+	border-radius: 5px;
+	border: 1px solid #dddddd;
+	background-color: #eeeeee;
+	outline: none;
+	transition: background 0.2s border-color 0.2s;
+}
+
+.form-input:focus {
+	border-color: var(--color-primary);
+	background-color: #eeeeee;
+}
+
+.input-form-error {
+	color: var(--color-error);
+	border-color: var(--color-error);
+}
+
+.input-form-error-message {
+	font-size: 0.85rem;
+	margin-top: 0.5rem;
+	color: var(--color-error);
+}
+
+.c-input-form-error-message {
+	font-size: 0.85rem;
+	margin-top: 0.5rem;
+	color: var(--color-error);
+}
+
+.form-button {
+	width: 100%;
+	padding: 1rem 2rem;
+	font-weight: 600;
+	font-size: 1.2rem;
+	color: #eeeeee;
+	border: none;
+	border-radius: 5px;
+	outline: none;
+	cursor: pointer;
+	background-color: var(--color-primary);
+}
+
+.form-button:hover {
+	background-color: var(--color-primary-dark);
+}
+
+.form-button:active {
+	transform: scale(0.98);
+}
+
+.form-text {
+	text-align: center;
+}
+
+.form-link {
+	color: var(--color-secondary);
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.form-link:hover {
+	text-decoration: underline;
+}
+
+#login-created {
+	color: var(--color-secondary);
+	text-align: center;
+}
+
+.login-success img {
+	display: block;
+	margin: 2rem auto;
+	width: 80px;
+}
+
+#account-created {
+	color: var(--color-secondary);
+	text-align: center;
+}
+
+.account-success img {
+	display: block;
+	margin: 2rem auto;
+	width: 80px;
+}

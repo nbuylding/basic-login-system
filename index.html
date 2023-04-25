@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="shortcut icon"
+			href="images/cherry-blossom.png"
+			type="image/x-icon"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@100;300;400;600&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<title>Login / Sign Up Form</title>
+	</head>
+
+	<body>
+		<div class="container">
+			<!-- login form -->
+			<form class="form" id="login">
+				<h1 class="form-title">Login</h1>
+				<div
+					class="form-message form-message-error form-message-success"
+				></div>
+				<div class="input-group">
+					<input
+						type="text"
+						class="form-input"
+						autofocus
+						placeholder="Username or Email"
+						name="username"
+					/>
+					<div class="input-form-error-message"></div>
+				</div>
+				<div class="input-group">
+					<input
+						type="password"
+						class="form-input"
+						placeholder="Password"
+						name="password"
+					/>
+					<div class="input-form-error-message"></div>
+				</div>
+				<button
+					class="form-button"
+					type="submit
+                "
+				>
+					Continue
+				</button>
+				<p class="form-text">
+					<a href="#" class="form-link">Forgot your password?</a>
+				</p>
+				<p class="form-text">
+					<a href="./" class="form-link" id="linkCreateAccount"
+						>Don't have an account? Create account</a
+					>
+				</p>
+			</form>
+
+			<!-- create an account -->
+			<form class="form hidden" id="createAccount">
+				<h1 class="form-title">Create Account</h1>
+				<div
+					class="form-message form-message-error form-message-success"
+				></div>
+				<div class="input-group">
+					<input
+						type="text"
+						class="form-input username"
+						autofocus
+						placeholder="Username"
+					/>
+					<div class="c-input-form-error-message"></div>
+				</div>
+				<div class="input-group">
+					<input
+						type="text"
+						class="form-input email"
+						autofocus
+						placeholder="Email Address"
+					/>
+					<div class="c-input-form-error-message"></div>
+				</div>
+				<div class="input-group">
+					<input
+						type="password"
+						class="form-input password"
+						placeholder="Password"
+					/>
+					<div class="c-input-form-error-message"></div>
+				</div>
+				<div class="input-group">
+					<input
+						type="password"
+						class="form-input confirm-password"
+						autofocus
+						placeholder="Confirm Password"
+					/>
+					<div class="c-input-form-error-message"></div>
+				</div>
+				<button
+					class="form-button"
+					type="submit
+                "
+				>
+					Continue
+				</button>
+
+				<p class="form-text">
+					<a href="./" class="form-link" id="linkLogin"
+						>Already have an account? Sign in</a
+					>
+				</p>
+			</form>
+
+			<!-- login success -->
+			<div class="login-success hidden">
+				<p id="login-created">Login successful!</p>
+				<img src="images/checked.png" alt="checkmark image" />
+			</div>
+
+			<!-- account created success -->
+			<div class="account-success hidden">
+				<p id="account-created">Account successfully created!</p>
+				<img src="images/checked.png" alt="checkmark image" />
+			</div>
+		</div>
+
+		<script src="app.js"></script>
+	</body>
+</html>
